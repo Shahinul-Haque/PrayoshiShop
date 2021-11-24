@@ -49,7 +49,7 @@ export const login = (email, password) => async (dispatch)=>{
 export const logout = ()=> (dispatch)=>{
 
     localStorage.removeItem('userInfo');
-    localStorage.removeItem('shippingAddress')
+    //localStorage.removeItem('shippingAddress')
     dispatch({
         type: USER_LOGOUT
     })
